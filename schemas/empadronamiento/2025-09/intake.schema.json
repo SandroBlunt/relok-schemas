@@ -1,0 +1,126 @@
+{
+  "meta": {
+    "submission_id": "malaga-2025-001",
+    "submitted_at": "2025-09-09T10:15:00+02:00",
+    "channel": "Telegram",
+    "timezone": "Europe/Madrid",
+    "locale": "es-ES",
+    "municipality": "Málaga",
+    "user_phone_e164": "+34600111222",
+    "tenant_id": "partner-xyz",
+    "api_version": "2025-09-01",
+    "idempotency_key": "5fb1c0f0-9d6a-46c1-8a6a-7b9c2a0a1c33",
+    "webhook_url": "https://partner.example.com/webhooks/empadronamiento",
+    "return_url": "https://partner.example.com/cases/malaga-2025-001"
+  },
+  "address": {
+    "street_type": "CALLE",
+    "street_name": "ALAMOS",
+    "number": "23",
+    "building": "B",
+    "staircase": "2",
+    "floor": "3",
+    "door": "D",
+    "postal_code": "29012",
+    "landline_phone": "952000000",
+    "household_total_persons": "2"
+  },
+  "persons": [
+    {
+      "first_name": "JUAN",
+      "last_name1": "PEREZ",
+      "last_name2": "GARCIA",
+      "sex": "M",
+      "birth": {
+        "date_iso": "1985-06-15",
+        "municipality": "MÁLAGA",
+        "province": "MÁLAGA",
+        "country": "ES",
+        "born_abroad": "no"
+      },
+      "nationality": "ES",
+      "document": {
+        "type": "DNI",
+        "residence_permit_category": "",
+        "number": "12345678Z",
+        "letter": "Z",
+        "passport_or_doc": "12345678Z"
+      },
+      "registration_reason": "CAMBIO_DOMICILIO",
+      "origin": {
+        "province_or_consulate": "VALENCIA",
+        "municipality_or_country": "VALÈNCIA"
+      },
+      "contact": {
+        "mobile_phone": "+34600111222",
+        "email": "juan.perez@example.com"
+      },
+      "education_level_code": "31"
+    },
+    {
+      "first_name": "LUCIA",
+      "last_name1": "PEREZ",
+      "last_name2": "GARCIA",
+      "sex": "F",
+      "birth": {
+        "date_iso": "2014-03-12",
+        "municipality": "SEVILLA",
+        "province": "SEVILLA",
+        "country": "ES",
+        "born_abroad": "no"
+      },
+      "nationality": "ES",
+      "document": {
+        "type": "PASSPORT",
+        "residence_permit_category": "",
+        "number": "PA1234567",
+        "letter": "",
+        "passport_or_doc": "PA1234567"
+      },
+      "registration_reason": "TRASLADO_RESIDENCIA",
+      "origin": {
+        "province_or_consulate": "SEVILLA",
+        "municipality_or_country": "SEVILLA"
+      },
+      "contact": {
+        "mobile_phone": "",
+        "email": ""
+      },
+      "education_level_code": ""
+    }
+  ],
+  "minors_or_incapacitated_authorization": {
+    "signers": [
+      {
+        "name": "MARIA GARCIA LOPEZ",
+        "id_document": "87654321X",
+        "address": "CALLE ALAMOS 23, 29012 MÁLAGA",
+        "affected_order_numbers": [
+          2
+        ],
+        "role": "mother"
+      }
+    ]
+  },
+  "registration_authorization": {
+    "authorizer_name": "PEDRO LOPEZ MARTIN",
+    "authorizer_id_document": "11223344H",
+    "authorizer_address": "CALLE ALAMOS 23, 29012 MÁLAGA",
+    "option": "Inscribirse en el mismo domicilio donde consta el autorizante"
+  },
+  "residence_declaration": {
+    "declarant_name": "",
+    "declarant_id_document": ""
+  },
+  "submitted_documents": {
+    "identity_document": "yes",
+    "birth_certificate": "no",
+    "housing_right_document": "no",
+    "authorization": "yes",
+    "family_book": "yes",
+    "other": {
+      "provided": "no",
+      "details": ""
+    }
+  }
+}
